@@ -2,7 +2,7 @@
 #
 # docker run -i -t \
 #        -v $HOME/Data:/home/data  \  <- mounts data directory to container
-#        toddstavish/monteverdi
+#        toddstavish/monteverdi2
 #
 # GUI Dependencies: Linux -> -v /tmp/.X11-unix:/tmp/.X11-unix and -e DISPLAY=unix$DISPLAY
 #                   OSX -> XQuartz and
@@ -19,4 +19,4 @@ RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
         apt-get clean &&\
         rm -rf /var/lib/apt/lists/*
 
-CMD ["/bin/bash"]
+CMD ["monteverdi2"]
