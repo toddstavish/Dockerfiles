@@ -1,4 +1,4 @@
-
+Orfeo Toolbox(OTB) is an open-source C++ library for remote sensing images processing.
 
 
 docker run -i -t \

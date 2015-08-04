@@ -19,4 +19,4 @@ RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
         apt-get clean &&\
         rm -rf /var/lib/apt/lists/*
 
-CMD ["monteverdi2"]
+CMD ["/bin/bash"]

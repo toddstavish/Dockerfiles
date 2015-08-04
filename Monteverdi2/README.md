@@ -1,4 +1,4 @@
-
+Monteverdi2 is a GUI application on Orfeo Toolbox(OTB), an open-source C++ library for remote sensing images processing.
 
 
 docker run -i -t \
