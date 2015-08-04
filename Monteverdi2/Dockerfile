@@ -15,7 +15,7 @@ MAINTAINER Todd Stavish <toddstavish@gmail.com>
 RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
         apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable &&\
         apt-get -qqy update &&\
-        apt-get install -qqy monteverdi2 --no-install-recommends &&\
+        apt-get install -qqy monteverdi2 mesa-utils --no-install-recommends &&\
         apt-get clean &&\
         rm -rf /var/lib/apt/lists/*
 
