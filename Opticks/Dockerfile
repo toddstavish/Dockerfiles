@@ -1,8 +1,9 @@
-# Run an instance with Monteverdi2
+# Run an instance with Orfeo Toolbox [option to execute otb cli and gui commands]
 #
 # docker run -i -t \
 #        -v $HOME/Data:/home/data  \  <- mounts data directory to container
-#        toddstavish/monteverdi2
+#        toddstavish/orfeo_toolbox \
+#        otb_cli_gui executable       <- otb command and parameters [defaults to shell]
 #
 # GUI Dependencies: Linux -> -v /tmp/.X11-unix:/tmp/.X11-unix and -e DISPLAY=unix$DISPLAY
 #                   OSX -> XQuartz and
@@ -15,8 +16,9 @@ MAINTAINER Todd Stavish <toddstavish@gmail.com>
 RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
         apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable &&\
         apt-get -qqy update &&\
-        apt-get install -qqy monteverdi2 mesa-utils xserver-xorg-video-all --no-install-recommends &&\
+        apt-get install -qqy otb-bin otb-bin-qt python-otb --no-install-recommends &&\
         apt-get clean &&\
         rm -rf /var/lib/apt/lists/*
 
+ENTRYPOINT
 CMD ["/bin/bash"]
