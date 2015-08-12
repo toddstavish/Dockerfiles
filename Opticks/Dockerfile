@@ -31,6 +31,4 @@ RUN dpkg -i /tmp/opticks_4.12.0-1_amd64.deb && \
 rm /tmp/opticks_4.12.0-1_amd64.deb && \
 rm -rf /var/lib/apt/lists/*
 
-CMD ["/bin/bash"]
-
-#ENTRYPOINT ["/opt/Opticks/Bin/Opticks"]
+ENTRYPOINT ["/opt/Opticks/Bin/Opticks"]
