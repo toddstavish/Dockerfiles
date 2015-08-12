@@ -9,7 +9,7 @@
 #                          socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\" and
 #                          -e DISPLAY=192.168.59.3:0 <- this the default virtualbox ip address
 #
-FROM ubuntu:14.04
+FROM ubuntu:15.04
 MAINTAINER Todd Stavish <toddstavish@gmail.com>
 
 RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
