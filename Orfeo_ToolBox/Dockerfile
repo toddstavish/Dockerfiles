@@ -1,4 +1,4 @@
-# Run an instance with Orfeo Toolbox [option to execute otb cli and gui commands]
+# Run Orfeo Toolbox in a container [option to execute otb cli and gui commands]
 #
 # docker run -i -t \
 #        -v $HOME/Data:/home/data  \  <- mounts data directory to container

@@ -1,4 +1,4 @@
-# Run an instance with Monteverdi2
+# Run Monteverdi2 in a container
 #
 # docker run -i -t \
 #        -v $HOME/Data:/home/data  \  <- mounts data directory to container
