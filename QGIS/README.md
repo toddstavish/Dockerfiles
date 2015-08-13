@@ -1,4 +1,4 @@
-QGIS is A Free and Open Source Geographic Information System.
+QGIS is a free and open source Geographic Information System.
 
 docker run -i -t \
 

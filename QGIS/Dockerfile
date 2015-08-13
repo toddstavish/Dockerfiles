@@ -14,16 +14,14 @@ MAINTAINER Todd Stavish <toddstavish@gmail.com>
 
 RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
         apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable &&\
-        apt-get -qqy update &&\
+        apt-get -qqy update && \
         apt-get install -qqy \
             otb-bin \
             otb-bin-qt \
             python-otb \
             qgis \
-            qgis-python \
-            --no-install-recommends &&\
+            --no-install-recommends && \
         apt-get clean &&\
         rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT
-CMD ["/bin/bash"]
+ENTRYPOINT ["/usr/bin/qgis"]
