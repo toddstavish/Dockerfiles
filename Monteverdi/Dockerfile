@@ -7,7 +7,7 @@
 # GUI Dependencies: Linux -> -v /tmp/.X11-unix:/tmp/.X11-unix and -e DISPLAY=unix$DISPLAY
 #                   OSX -> XQuartz and
 #                          socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\" and
-#                          -e DISPLAY=192.168.99.100:0 <- this the default docker ip address
+#                          -e DISPLAY=192.168.99.1:0 <- this the default virtualbox ip address
 #
 FROM ubuntu:14.04
 MAINTAINER Todd Stavish <toddstavish@gmail.com>
