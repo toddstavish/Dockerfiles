@@ -23,7 +23,7 @@ XQuartz
 
 socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\“$DISPLAY\” and
 
--e DISPLAY=192.168.59.3:0 <- this the default virtualbox interface ip address
+-e DISPLAY=192.168.99.100:0 <- this the default docker interface ip address
 
 Example CLI (with parameters):
 
