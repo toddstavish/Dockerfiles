@@ -16,9 +16,15 @@ RUN apt-get install -qqy software-properties-common --no-install-recommends &&\
         apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable &&\
         apt-get -qqy update && \
         apt-get install -qqy \
+            gdal-bin \
             otb-bin \
             otb-bin-qt \
             python-otb \
+            python-qgis-common \
+            python-qgis \
+            saga \
+            grass \
+            qgis-providers \
             qgis \
             --no-install-recommends && \
         apt-get clean &&\
